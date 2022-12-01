@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/offset"
+        android:title="@string/offset"
+        android:icon="@drawable/ic_offset"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/stock_out"
+        android:title="@string/stock_out"
+        android:icon="@drawable/ic_stock_out"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/stock_balance"
+        android:title="@string/stock_balance"
+        android:icon="@drawable/ic_stock_balance"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/new_item"
+        android:title="@string/new_item"
+        android:icon="@drawable/ic_new"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

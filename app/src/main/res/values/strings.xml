@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name" translatable="false">AMPG_Printing_Room</string>
+    <string name="offset" translatable="false">Офсет</string>
+    <string name="stock_out" translatable="false">Получено со склада</string>
+    <string name="stock_balance" translatable="false">Склад баланс</string>
+    <string name="new_item" translatable="false">Новый</string>
+    <string name="name_job">Название заказа: </string>
+    <string name="date">Дата:</string>
+    <string name="number_job">Заказ №  </string>
+    <string name="material">Материал(название):  </string>
+    <string name="paper_format_h">Ширина:</string>
+    <string name="paper_format_w">Длина:</string>
+    <string name="paper_format">Формат бумаги(мм.):  </string>
+    <string name="machine">Машина: Rapida 105U+L UV </string>
+    <string name="count_sheets">Тираж:  </string>
+    <string name="paper_thickness">Толщина(мм):  </string>
+    <string name="paper_density">Плотность(г/см2):  </string>
+    <string name="count_plates">Кол-во форм:  </string>
+    <string name="plates_format_h">Высота формы:  </string>
+    <string name="plat_format">Формат формы: 795х1050 мм. </string>
+    <string name="plates_format_w">Ширина формы: </string>
+    <string name="count_colors_names">Порядок цветов  </string>
+    <string name="description">Примечания  </string>
+    <string name="count_material">Отпечатано(л./м.):  </string>
+    <string name="inks_print">Название краски:  </string>
+    <string name="inks_print_count">Получено краски(кг):  </string>
+    <string name="inks_print_finish">Осталось краски(кг):  </string>
+    <string name="inks_print_job">Расход краски(г):   </string>
+    <string name="alko_print_count">Расход спирта(л):  </string>
+    <string name="pH_print_name">РН название:  </string>
+    <string name="pH_print_count">РН кол-во(л):  </string>
+    <string name="other_materials_name">Другое(названия):  </string>
+    <string name="other_materials_count">Другое(кол-во):  </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rasxod_material">Расходные материалы </string>
+    <string name="save">Сохранить</string>
+    <string name="share">Поделиться</string>
+    <string name="remainder_material">Остаток материала:  </string>
+    <string name="setup_material">Приладка(запуск):  </string>
+    <string name="stock_out_paper">Получено материала:  </string>
+    <string name="crime_report">Отправить с помощью:  </string>
+
+</resources>

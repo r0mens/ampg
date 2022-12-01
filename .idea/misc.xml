@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_camera.xml" value="0.2155" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_offset.xml" value="0.1" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_stock_balance.xml" value="0.1" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_stock_out.xml" value="0.1" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/activity_main.xml" value="0.3140625" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/activity_new_offset_notes.xml" value="0.22674865488086088" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/fragment_offset_note.xml" value="0.33229166666666665" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/offset_note_list_item.xml" value="0.45454545454545453" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/menu/bottom_menu.xml" value="0.33229166666666665" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/menu/new_offset_note_menu.xml" value="0.33229166666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
