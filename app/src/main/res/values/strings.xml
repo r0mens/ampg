@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">AMPG_Printing_Room</string>
+    <string name="app_name" translatable="false">AMPG Офсетная печать</string>
     <string name="offset" translatable="false">Офсет</string>
     <string name="stock_out" translatable="false">Получено со склада</string>
     <string name="stock_balance" translatable="false">Склад баланс</string>
@@ -40,5 +40,8 @@
     <string name="setup_material">Приладка(запуск):  </string>
     <string name="stock_out_paper">Получено материала:  </string>
     <string name="crime_report">Отправить с помощью:  </string>
+    <string name="cancel">Отменить</string>
+    <string name="delete_alert">Удалить</string>
+    <string name="delete_item">Удалить содержимое?</string>
 
 </resources>

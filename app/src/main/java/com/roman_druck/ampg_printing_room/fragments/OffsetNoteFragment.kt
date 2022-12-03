@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.roman_druck.ampg_printing_room.R
@@ -16,6 +17,7 @@ import com.roman_druck.ampg_printing_room.activities.NewOffsetNotesActivity
 import com.roman_druck.ampg_printing_room.databinding.FragmentOffsetNoteBinding
 import com.roman_druck.ampg_printing_room.db.MainViewModel
 import com.roman_druck.ampg_printing_room.db.OffsetNoteAdapter
+import com.roman_druck.ampg_printing_room.dialogs.DeleteDialog
 import com.roman_druck.ampg_printing_room.entities.OffsetNotes
 import com.roman_druck.ampg_printing_room.utils.ShareHelperManager
 
@@ -83,7 +85,13 @@ class OffsetNoteFragment : BaseFragment(), OffsetNoteAdapter.Listener {
 
 
     override fun deleteItem(id: Int) {
-        mainViewModel.deleteNote(id)
+        DeleteDialog.showDialog(context as AppCompatActivity, object : DeleteDialog.Listener{
+            override fun onClick(){
+                mainViewModel.deleteNote(id)
+            }
+
+        })
+
     }
 
     override fun onClickItem(note: OffsetNotes) {
