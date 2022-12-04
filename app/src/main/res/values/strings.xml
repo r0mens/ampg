@@ -41,7 +41,8 @@
     <string name="stock_out_paper">Получено материала:  </string>
     <string name="crime_report">Отправить с помощью:  </string>
     <string name="cancel">Отменить</string>
-    <string name="delete_alert">Удалить</string>
-    <string name="delete_item">Удалить содержимое?</string>
+    <string name="delete_alert">Удаление тех.задания</string>
+    <string name="delete_item">Удалить содержимое</string>
+    <string name="delete_alert2">Удалить</string>
 
 </resources>
