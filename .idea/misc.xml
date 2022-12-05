@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/blank.xml" value="0.2155" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_camera.xml" value="0.2155" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_job_name.xml" value="0.2155" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_offset.xml" value="0.1" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_stock_balance.xml" value="0.1" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_stock_out.xml" value="0.1" />
