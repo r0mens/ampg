@@ -44,5 +44,6 @@
     <string name="delete_alert">Удаление тех.задания</string>
     <string name="delete_item">Удалить содержимое</string>
     <string name="delete_alert2">Удалить</string>
+    <string name="technik_state">Техническое состояние</string>
 
 </resources>

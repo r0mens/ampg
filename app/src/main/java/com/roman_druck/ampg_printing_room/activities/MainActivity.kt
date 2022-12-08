@@ -35,6 +35,9 @@ class MainActivity : AppCompatActivity() {
                     Log.d("MyLog","new")
                     FragmentManager.currentFrag?.onClickNew()
                 }
+                R.id.tecnik_state ->{
+                    Log.d("MyLog","Тех.состояние")
+                }
             }
             true
 

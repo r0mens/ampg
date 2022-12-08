@@ -25,5 +25,11 @@
         android:icon="@drawable/ic_new"
         app:showAsAction="ifRoom"/>
 
+    <item
+        android:id="@+id/tecnik_state"
+        android:title="@string/technik_state"
+        android:icon="@drawable/ic_construction"
+        app:showAsAction="ifRoom"/>
+
 
 </menu>

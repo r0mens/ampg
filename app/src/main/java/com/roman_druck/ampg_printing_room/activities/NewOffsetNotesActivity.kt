@@ -15,7 +15,6 @@ import com.roman_druck.ampg_printing_room.utils.TimeManager
 class NewOffsetNotesActivity : AppCompatActivity() {
     private lateinit var binding: ActivityNewOffsetNotesBinding
     private var note: OffsetNotes? = null
-    //private  var adapter: OffsetNoteAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
