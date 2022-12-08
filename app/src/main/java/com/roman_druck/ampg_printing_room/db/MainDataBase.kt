@@ -1,17 +1,15 @@
 package com.roman_druck.ampg_printing_room.db
 
 import android.content.Context
+import androidx.room.AutoMigration
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.roman_druck.ampg_printing_room.entities.LibraryItem
-import com.roman_druck.ampg_printing_room.entities.OffsetNotes
-import com.roman_druck.ampg_printing_room.entities.StockBalance
-import com.roman_druck.ampg_printing_room.entities.StockOut
+import com.roman_druck.ampg_printing_room.entities.*
 
 
-@Database(entities = [LibraryItem::class, OffsetNotes::class, StockBalance::class, StockOut::class],
-               version = 1, exportSchema = true//,autoMigrations = [AutoMigration(from = 1, to = 2)]
+@Database(entities = [LibraryItem::class, OffsetNotes::class, StockBalance::class, StockOut::class, TechnikState::class],
+               version = 2, exportSchema = true,autoMigrations = [AutoMigration(from = 1, to = 2)]
 )
 abstract class MainDataBase : RoomDatabase() {
     abstract fun getDao(): Dao
