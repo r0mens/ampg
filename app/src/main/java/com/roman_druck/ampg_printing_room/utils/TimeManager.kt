@@ -5,7 +5,7 @@ import java.util.*
 
 object TimeManager {
      fun getCurrentTime(): String{
-        val formatter = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+        val formatter = SimpleDateFormat("dd.M.yyyy", Locale.getDefault())
         return formatter.format(Calendar.getInstance().time)
     }
 }

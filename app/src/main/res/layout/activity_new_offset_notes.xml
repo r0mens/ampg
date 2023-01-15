@@ -428,12 +428,6 @@
             </LinearLayout>
 
 
-            <ImageButton
-                android:id="@+id/imShareOfset"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_share" />
-
         </LinearLayout>
 
     </ScrollView>

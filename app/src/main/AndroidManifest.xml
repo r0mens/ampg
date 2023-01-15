@@ -15,6 +15,9 @@
         android:theme="@style/Theme.AMPG_Printing_Room"
         tools:targetApi="31">
         <activity
+            android:name=".activities.TechnikListActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.NewOffsetNotesActivity"
             android:exported="false" />
         <activity

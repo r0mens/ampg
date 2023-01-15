@@ -41,9 +41,16 @@
     <string name="stock_out_paper">Получено материала:  </string>
     <string name="crime_report">Отправить с помощью:  </string>
     <string name="cancel">Отменить</string>
-    <string name="delete_alert">Удаление тех.задания</string>
+    <string name="delete_alert">Удаление содержимого</string>
     <string name="delete_item">Удалить содержимое</string>
     <string name="delete_alert2">Удалить</string>
     <string name="technik_state">Техническое состояние</string>
+    <string name="title_hint">Заголовок</string>
+    <string name="description_hint">Описание</string>
+    <string name="new_list">Название списка</string>
+    <string name="list_name">Имя списка</string>
+    <string name="create_list">Создание списка</string>
+    <string name="update">Обновить</string>
+    <string name="general">Главное</string>
 
 </resources>
