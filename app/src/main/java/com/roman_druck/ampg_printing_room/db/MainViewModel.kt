@@ -6,8 +6,9 @@ import com.roman_druck.ampg_printing_room.entities.TechnikState
 import kotlinx.coroutines.launch
 
 class MainViewModel(database: MainDataBase): ViewModel() {
-    private val dao = database.getDao()
 
+    private val dao = database.getDao()
+    val allNotes: LiveData<List<OffsetNotes>> = dao.getAllNotes().asLiveData()
     val allTechnikListNames: LiveData<List<TechnikState>> = dao.getAllTechnikListNames(). asLiveData()
     fun insertNote(note: OffsetNotes) = viewModelScope.launch {
         dao.insertNote(note)
