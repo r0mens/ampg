@@ -163,8 +163,5 @@ class NewOffsetNotesActivity : AppCompatActivity() {
 
 
         )
-
     }
-
-
 }

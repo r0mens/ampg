@@ -2,7 +2,9 @@ package com.roman_druck.ampg_printing_room.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import androidx.activity.viewModels
+import com.roman_druck.ampg_printing_room.R
 import com.roman_druck.ampg_printing_room.databinding.ActivityTechnikListBinding
 import com.roman_druck.ampg_printing_room.db.MainViewModel
 import com.roman_druck.ampg_printing_room.entities.TechnikState
@@ -18,6 +20,11 @@ class TechnikListActivity : AppCompatActivity() {
         binding = ActivityTechnikListBinding.inflate(layoutInflater)
         setContentView(binding.root)
         init()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.technik_menu, menu)
+        return true
     }
     private  fun init(){
         technikstate = intent.getSerializableExtra(TECHNIK_STATE) as TechnikState

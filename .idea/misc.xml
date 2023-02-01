@@ -4,10 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/blank.xml" value="0.2155" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_add_item.xml" value="0.214" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_camera.xml" value="0.2155" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_delete.xml" value="0.167" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_delete_item.xml" value="0.214" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_job_name.xml" value="0.2155" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_new.xml" value="0.214" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_offset.xml" value="0.1" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_save.xml" value="0.214" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_share.xml" value="0.214" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_stock_balance.xml" value="0.1" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_stock_out.xml" value="0.1" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_update.xml" value="0.167" />
@@ -23,6 +28,7 @@
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/offset_note_list_item.xml" value="0.39544235924932974" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/menu/bottom_menu.xml" value="0.33229166666666665" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/menu/new_offset_note_menu.xml" value="0.33229166666666665" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/menu/technik_menu.xml" value="0.33125" />
       </map>
     </option>
   </component>

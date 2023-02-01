@@ -19,7 +19,7 @@ import com.roman_druck.ampg_printing_room.db.MainViewModel
 import com.roman_druck.ampg_printing_room.db.OffsetNoteAdapter
 import com.roman_druck.ampg_printing_room.dialogs.DeleteDialog
 import com.roman_druck.ampg_printing_room.entities.OffsetNotes
-import com.roman_druck.ampg_printing_room.utils.ShareHelperManager
+
 
 
 class OffsetNoteFragment : BaseFragment(), OffsetNoteAdapter.Listener {
@@ -118,7 +118,7 @@ class OffsetNoteFragment : BaseFragment(), OffsetNoteAdapter.Listener {
 
     private fun makeShareText(note: List<OffsetNotes>): String {
         val sBuilder = StringBuilder()
-        var counter = 0
+        //var counter = 0
         note.forEach {
             //sBuilder.append("${counter++}")
             sBuilder.append("Дата:${it.date} ")

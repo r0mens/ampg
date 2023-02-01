@@ -1,6 +1,5 @@
 package com.roman_druck.ampg_printing_room.db
 
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,8 +9,6 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.roman_druck.ampg_printing_room.R
 import com.roman_druck.ampg_printing_room.databinding.ListNameItemBinding
-import com.roman_druck.ampg_printing_room.databinding.OffsetNoteListItemBinding
-import com.roman_druck.ampg_printing_room.entities.OffsetNotes
 import com.roman_druck.ampg_printing_room.entities.TechnikState
 
 class TechnikListNameAdapter(private val listener: Listener): ListAdapter<TechnikState, TechnikListNameAdapter.ItemHolder>(ItemComparator()) {
@@ -65,10 +62,7 @@ class TechnikListNameAdapter(private val listener: Listener): ListAdapter<Techni
         fun deleteItem(id: Int)
         fun updateItem(name: TechnikState)
         fun onClickItem(listName: TechnikState)
-
     }
-
-
 }
 
 

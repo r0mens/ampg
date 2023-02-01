@@ -48,9 +48,15 @@
     <string name="title_hint">Заголовок</string>
     <string name="description_hint">Описание</string>
     <string name="new_list">Название списка</string>
+    <string name="new_technik_list">Новый элемент списка</string>
     <string name="list_name">Имя списка</string>
     <string name="create_list">Создание списка</string>
     <string name="update">Обновить</string>
     <string name="general">Главное</string>
+    <string name="delete_list">Удалить лист</string>
+    <string name="delete_list_all">Удалить лист</string>
+    <string name="clear_list">Очистить список</string>
+    <string name="share_list">Поделиться списком</string>
+    <string name="save_technik_list">Сохранить список</string>
 
 </resources>

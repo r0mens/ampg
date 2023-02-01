@@ -35,12 +35,10 @@ class MainActivity : AppCompatActivity(), NewListDialog.Listener{
                     Log.d("MyLog","stock_balance")
                 }
                 R.id.new_item -> {
-                    Log.d("MyLog","new")
                     FragmentManager.currentFrag?.onClickNew()
 
                 }
                 R.id.tecnik_state ->{
-                    Log.d("MyLog","Тех.состояние")
                     FragmentManager.setFragment(TechnikListFragment.newInstance(), this)
                 }
             }

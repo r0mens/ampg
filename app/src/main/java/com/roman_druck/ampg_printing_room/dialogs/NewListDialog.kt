@@ -8,7 +8,7 @@ import com.roman_druck.ampg_printing_room.databinding.NewListDialogBinding
 
 object NewListDialog {
 
-    fun showDialog(context: Context, listener: Listener, name: String){  //name: String
+    fun showDialog(context: Context, listener: Listener, name: String){
         var dialog: AlertDialog? = null
         val builder = AlertDialog.Builder(context)
         val binding = NewListDialogBinding.inflate(LayoutInflater.from(context))
