@@ -19,7 +19,7 @@ import com.roman_druck.ampg_printing_room.db.MainViewModel
 import com.roman_druck.ampg_printing_room.db.OffsetNoteAdapter
 import com.roman_druck.ampg_printing_room.dialogs.DeleteDialog
 import com.roman_druck.ampg_printing_room.entities.OffsetNotes
-import com.roman_druck.ampg_printing_room.utils.ShareHelperManager
+
 
 
 
