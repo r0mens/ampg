@@ -3,6 +3,7 @@ package com.roman_druck.ampg_printing_room.db
 import androidx.room.*
 import androidx.room.Dao
 import com.roman_druck.ampg_printing_room.entities.OffsetNotes
+import com.roman_druck.ampg_printing_room.entities.TechnikItem
 import com.roman_druck.ampg_printing_room.entities.TechnikState
 import kotlinx.coroutines.flow.Flow
 
@@ -21,6 +22,8 @@ interface Dao {
     suspend fun insertNote(note: OffsetNotes)
     @Insert
     suspend fun insertTechnikListName(name: TechnikState)
+    //@Insert
+    //suspend fun insertTechnikItem(technikItem: TechnikItem)
     @Update
     suspend fun updateNote(note: OffsetNotes)
     @Update

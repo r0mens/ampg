@@ -19,13 +19,14 @@
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/drawable/ic_update_list.xml" value="0.167" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/activity_main.xml" value="0.3140625" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/activity_new_offset_notes.xml" value="0.22674865488086088" />
-        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/activity_technik_list.xml" value="0.15364583333333334" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/activity_technik_list.xml" value="0.22" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/delete_dialog.xml" value="0.33229166666666665" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/fragment_offset_note.xml" value="0.33229166666666665" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/fragment_technik_list.xml" value="0.22" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/list_name_item.xml" value="0.33" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/new_list_dialog.xml" value="0.25" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/offset_note_list_item.xml" value="0.39544235924932974" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/technik_item.xml" value="0.33229166666666665" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/menu/bottom_menu.xml" value="0.33229166666666665" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/menu/new_offset_note_menu.xml" value="0.33229166666666665" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/menu/technik_menu.xml" value="0.33125" />

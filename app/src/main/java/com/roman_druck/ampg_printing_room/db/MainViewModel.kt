@@ -2,6 +2,7 @@ package com.roman_druck.ampg_printing_room.db
 
 import androidx.lifecycle.*
 import com.roman_druck.ampg_printing_room.entities.OffsetNotes
+import com.roman_druck.ampg_printing_room.entities.TechnikItem
 import com.roman_druck.ampg_printing_room.entities.TechnikState
 import kotlinx.coroutines.launch
 
@@ -16,6 +17,9 @@ class MainViewModel(database: MainDataBase): ViewModel() {
     fun insertTechnikListName(listName: TechnikState) = viewModelScope.launch {
         dao.insertTechnikListName(listName)
     }
+    /*fun insertTechnikItem(technikItem: TechnikItem) = viewModelScope.launch {
+        dao.insertTechnikItem(technikItem)
+    }*/
     fun updateNote(note: OffsetNotes) = viewModelScope.launch {
         dao.updateNote(note)
     }

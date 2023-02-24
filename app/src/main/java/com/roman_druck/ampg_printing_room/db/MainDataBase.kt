@@ -9,7 +9,7 @@ import com.roman_druck.ampg_printing_room.entities.*
 
 
 @Database(entities = [LibraryItem::class, OffsetNotes::class, StockBalance::class, StockOut::class, TechnikState::class],
-               version = 3, exportSchema = true,autoMigrations = [AutoMigration(from = 2, to = 3)]
+               version = 4, exportSchema = true,autoMigrations = [AutoMigration(from = 3, to = 4)]
 )
 abstract class MainDataBase : RoomDatabase() {
     abstract fun getDao(): Dao
