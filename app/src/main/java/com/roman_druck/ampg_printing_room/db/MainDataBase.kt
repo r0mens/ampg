@@ -8,7 +8,8 @@ import androidx.room.RoomDatabase
 import com.roman_druck.ampg_printing_room.entities.*
 
 
-@Database(entities = [LibraryItem::class, OffsetNotes::class, StockBalance::class, StockOut::class, TechnikState::class],
+@Database(entities = [LibraryItem::class, OffsetNotes::class, StockBalance::class,
+          StockOut::class, TechnikState::class, TechnikItem::class],
                version = 4, exportSchema = true,autoMigrations = [AutoMigration(from = 3, to = 4)]
 )
 abstract class MainDataBase : RoomDatabase() {

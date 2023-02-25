@@ -22,8 +22,8 @@ interface Dao {
     suspend fun insertNote(note: OffsetNotes)
     @Insert
     suspend fun insertTechnikListName(name: TechnikState)
-    //@Insert
-    //suspend fun insertTechnikItem(technikItem: TechnikItem)
+    @Insert
+    suspend fun insertTechnikItem(technikItem: TechnikItem)
     @Update
     suspend fun updateNote(note: OffsetNotes)
     @Update

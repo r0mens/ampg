@@ -24,14 +24,14 @@
                 android:hint="Техническое описание"
                 android:inputType="textMultiLine|textPersonName|textImeMultiLine"
                 android:textColorHighlight="@color/black"
-                android:visibility="visible" />
+                android:visibility="gone" />
 
             <Button
                 android:id="@+id/buttonSave"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#78686565"
-                android:visibility="visible"
+                android:visibility="gone"
                 android:text="сохранить" />
 
             <TextView

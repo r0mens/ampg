@@ -17,9 +17,9 @@ class MainViewModel(database: MainDataBase): ViewModel() {
     fun insertTechnikListName(listName: TechnikState) = viewModelScope.launch {
         dao.insertTechnikListName(listName)
     }
-    /*fun insertTechnikItem(technikItem: TechnikItem) = viewModelScope.launch {
+    fun insertTechnikItem(technikItem: TechnikItem) = viewModelScope.launch {
         dao.insertTechnikItem(technikItem)
-    }*/
+    }
     fun updateNote(note: OffsetNotes) = viewModelScope.launch {
         dao.updateNote(note)
     }
