@@ -32,6 +32,7 @@ class TechnikListNameAdapter(private val listener: Listener): ListAdapter<Techni
             }
             imDeleteNameList.setOnClickListener {
                 listener.deleteItem(listName.id!!)
+
             }
             imUpdateNameList.setOnClickListener {
                 listener.updateItem(listName)
@@ -60,6 +61,7 @@ class TechnikListNameAdapter(private val listener: Listener): ListAdapter<Techni
     }
     interface Listener{
         fun deleteItem(id: Int)
+        //fun deleteTechnikItem(listId: Int)
         fun updateItem(name: TechnikState)
         fun onClickItem(listName: TechnikState)
     }

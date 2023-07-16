@@ -1,8 +1,8 @@
 {
   "formatVersion": 1,
   "database": {
-    "version": 1,
-    "identityHash": "f6b5402530079bc0ce17734f8f6555de",
+    "version": 5,
+    "identityHash": "ee30670dc118620dab5200cd372dd113",
     "entities": [
       {
         "tableName": "library",
@@ -326,7 +326,7 @@
       },
       {
         "tableName": "technik_item",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT NOT NULL, `desk` TEXT, `listId` INTEGER)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `listId` INTEGER, `description` TEXT NOT NULL)",
         "fields": [
           {
             "fieldPath": "id",
@@ -335,22 +335,16 @@
             "notNull": false
           },
           {
-            "fieldPath": "name",
-            "columnName": "name",
-            "affinity": "TEXT",
-            "notNull": true
-          },
-          {
-            "fieldPath": "description",
-            "columnName": "desk",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
             "fieldPath": "listId",
             "columnName": "listId",
             "affinity": "INTEGER",
             "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
           }
         ],
         "primaryKey": {
@@ -404,7 +398,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f6b5402530079bc0ce17734f8f6555de')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ee30670dc118620dab5200cd372dd113')"
     ]
   }
 }

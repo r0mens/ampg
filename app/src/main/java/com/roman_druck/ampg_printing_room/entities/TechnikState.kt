@@ -1,12 +1,13 @@
+
+
 package com.roman_druck.ampg_printing_room.entities
 
-import androidx.room.ColumnInfo
-import androidx.room.Entity
-import androidx.room.PrimaryKey
+import androidx.room.*
 import java.io.Serializable
 
 
 @Entity(tableName = "technik_state")
+@TypeConverters(Converters::class)
 data class TechnikState(
     @PrimaryKey(autoGenerate = true)
     val id: Int?,
@@ -15,8 +16,5 @@ data class TechnikState(
     @ColumnInfo(name = "data")
     val date: String,
     @ColumnInfo(name = "itemsIds")
-    val itemsIds: String? = null
-
-
-
+    var itemsIds: List<Int>? = null
 ): Serializable

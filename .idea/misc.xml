@@ -25,6 +25,7 @@
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/fragment_technik_list.xml" value="0.22" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/list_name_item.xml" value="0.33" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/new_list_dialog.xml" value="0.25" />
+        <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/new_technik_list_dialog.xml" value="0.33125" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/offset_note_list_item.xml" value="0.39544235924932974" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/layout/technik_item.xml" value="0.33229166666666665" />
         <entry key="..\:/AMPG_Printing_Room/app/src/main/res/menu/bottom_menu.xml" value="0.33229166666666665" />
@@ -33,7 +34,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="liberica-1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
