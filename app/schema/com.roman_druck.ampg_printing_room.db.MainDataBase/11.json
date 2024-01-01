@@ -1,0 +1,334 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 11,
+    "identityHash": "59d00ac03f8523b75d19b329d1fab1d7",
+    "entities": [
+      {
+        "tableName": "library",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "offset_notes",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT NOT NULL, `date` TEXT NOT NULL, `number` TEXT NOT NULL, `machine` TEXT NOT NULL, `material` TEXT NOT NULL, `paper_format` TEXT NOT NULL, `count_sheets` TEXT NOT NULL, `paper_thickness` TEXT NOT NULL, `paper_density` TEXT NOT NULL, `count_plates` TEXT NOT NULL, `plates_format` TEXT NOT NULL, `count_colors_names` TEXT NOT NULL, `description` TEXT NOT NULL, `count_material` TEXT NOT NULL, `count_stock_material` TEXT NOT NULL, `remainder_material` TEXT NOT NULL, `setup_material` TEXT NOT NULL, `inks_print` TEXT NOT NULL, `inks_print_job` TEXT NOT NULL, `alko_print_count` TEXT NOT NULL, `pH_print_name` TEXT NOT NULL, `pH_print_count` TEXT NOT NULL, `other_materials_name` TEXT NOT NULL, `other_materials_count` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "date",
+            "columnName": "date",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "number",
+            "columnName": "number",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "machine",
+            "columnName": "machine",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "material",
+            "columnName": "material",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "paper_format",
+            "columnName": "paper_format",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "count_sheets",
+            "columnName": "count_sheets",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "paper_thickness",
+            "columnName": "paper_thickness",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "paper_density",
+            "columnName": "paper_density",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "count_plates",
+            "columnName": "count_plates",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "plates_format",
+            "columnName": "plates_format",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "count_colors_names",
+            "columnName": "count_colors_names",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "count_material",
+            "columnName": "count_material",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "count_stock_material",
+            "columnName": "count_stock_material",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "remainder_material",
+            "columnName": "remainder_material",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "setup_material",
+            "columnName": "setup_material",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "inks_print_name",
+            "columnName": "inks_print",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "inks_print_job",
+            "columnName": "inks_print_job",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "alco_print_count",
+            "columnName": "alko_print_count",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pH_print_name",
+            "columnName": "pH_print_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pH_print_count",
+            "columnName": "pH_print_count",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "other_materials_name",
+            "columnName": "other_materials_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "other_materials_count",
+            "columnName": "other_materials_count",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "StockBalance",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT NOT NULL, `count_name` REAL NOT NULL, `itemInfo` TEXT NOT NULL, `itemChecked` INTEGER NOT NULL, `listId` INTEGER NOT NULL, `itemType` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "count_name",
+            "columnName": "count_name",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "itemInfo",
+            "columnName": "itemInfo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "itemChecked",
+            "columnName": "itemChecked",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "listId",
+            "columnName": "listId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "itemType",
+            "columnName": "itemType",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "stock_out",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `material_print` TEXT NOT NULL, `count_material` INTEGER NOT NULL, `inks_print` TEXT NOT NULL, `inks_print_count` REAL NOT NULL, `alko_print_count` REAL NOT NULL, `pH_print_name` TEXT NOT NULL, `pH_print_count` REAL NOT NULL, `other_materials_name` TEXT NOT NULL, `other_materials_count` REAL NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "material_out_print",
+            "columnName": "material_print",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "count_material",
+            "columnName": "count_material",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "inks_print_name",
+            "columnName": "inks_print",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "inks_print_count",
+            "columnName": "inks_print_count",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "alco_print_count",
+            "columnName": "alko_print_count",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pH_print_name",
+            "columnName": "pH_print_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pH_print_count",
+            "columnName": "pH_print_count",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "other_materials_name",
+            "columnName": "other_materials_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "other_materials_count",
+            "columnName": "other_materials_count",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '59d00ac03f8523b75d19b329d1fab1d7')"
+    ]
+  }
+}

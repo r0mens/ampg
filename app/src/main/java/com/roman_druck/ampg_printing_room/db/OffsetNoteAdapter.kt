@@ -61,6 +61,7 @@ class OffsetNoteAdapter(private val listener: Listener): ListAdapter<OffsetNotes
             }
 
 
+
         }
         companion object{
             fun create(parent: ViewGroup): ItemHolder{
@@ -84,6 +85,7 @@ class OffsetNoteAdapter(private val listener: Listener): ListAdapter<OffsetNotes
         fun deleteItem(id: Int)
         fun onClickItem(note: OffsetNotes)
         fun shareOfsetNoteItem(note: List<OffsetNotes>)
+
     }
 
 

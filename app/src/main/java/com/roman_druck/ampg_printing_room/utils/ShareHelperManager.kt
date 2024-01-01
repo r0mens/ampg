@@ -19,7 +19,7 @@ object ShareHelperManager {
         val sBuilder = StringBuilder()
 
         sBuilder.append("\n")
-        var counter = 0
+        //var counter = 0
         note.forEach{
             //sBuilder.append("${counter++}")
             sBuilder.append("Название заказа: ${it.name} ")

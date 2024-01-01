@@ -9,8 +9,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="162dp">
 
 
         <LinearLayout
@@ -19,20 +19,26 @@
             android:orientation="vertical"
             android:padding="1dp">
 
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="@string/name_job" />
+
             <EditText
                 android:id="@+id/edName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="1dp"
-                android:backgroundTint="@android:color/transparent"
                 android:cursorVisible="true"
                 android:ems="10"
                 android:gravity="start"
                 android:inputType="textPersonName|textMultiLine"
                 android:lines="2"
                 android:maxLines="2"
-                android:minLines="1"
-                android:text="@string/name_job" />
+                android:minLines="1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -42,12 +48,20 @@
 
             </LinearLayout>
 
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="@string/number_job" />
+
             <EditText
                 android:id="@+id/edNumber"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/number_job"
-                style="@style/Number"
+                android:gravity="center"
                 tools:ignore="TextFields" />
 
             <LinearLayout
@@ -58,14 +72,22 @@
 
             </LinearLayout>
 
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="@string/machine2" />
+
             <EditText
                 android:id="@+id/edMachine"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/machine"
-                android:backgroundTint="@android:color/transparent"
-                style="@style/Number"/>
+                android:gravity="center"
+                android:text="@string/machine" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -75,13 +97,20 @@
 
             </LinearLayout>
 
-            <EditText
-                style="@style/Number"
-                android:id="@+id/edMaterialName"
+            <TextView
+                style="@style/Name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:lines="1"
                 android:text="@string/material" />
 
+            <EditText
+                android:id="@+id/edMaterialName"
+                style="@style/Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -89,14 +118,23 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="@string/paper_format" />
+
 
             <EditText
                 android:id="@+id/edPaperFormat"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/paper_format"
-                style="@style/Number"/>
+                android:gravity="center" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -105,15 +143,22 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="@string/count_sheets" />
 
             <EditText
                 android:id="@+id/edCountSheets"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/count_sheets"
-                android:backgroundTint="@android:color/transparent"
-                style="@style/Number" />
+                android:gravity="center" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -122,15 +167,22 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="@string/paper_thickness" />
 
             <EditText
                 android:id="@+id/edThickness"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/paper_thickness"
-                android:backgroundTint="@android:color/transparent"
-                style="@style/Number" />
+                android:gravity="center"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -139,15 +191,22 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="@string/paper_density" />
 
             <EditText
                 android:id="@+id/edDensity"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/paper_density"
-                android:backgroundTint="@android:color/transparent"
-                style="@style/Number" />
+                android:gravity="center"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -156,15 +215,22 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="@string/count_plates" />
 
             <EditText
                 android:id="@+id/edCountPlates"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/count_plates"
-                android:backgroundTint="@android:color/transparent"
-                style="@style/Number"/>
+                android:gravity="center"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -173,15 +239,23 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="@string/plat_format" />
 
             <EditText
                 android:id="@+id/edPlatesFormat"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/plat_format"
-                android:backgroundTint="@android:color/transparent"
-                style="@style/Number" />
+                android:text="@string/plat_format2"
+                android:textAlignment="center" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -191,16 +265,22 @@
 
             </LinearLayout>
 
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/count_colors_names" />
+
             <EditText
                 android:id="@+id/edCountColorsNames"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:lines="5"
                 android:maxLines="5"
-                android:minLines="1"
-                android:text="@string/count_colors_names"
-                style="@style/Number"/>
+                android:minLines="1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -210,14 +290,20 @@
 
             </LinearLayout>
 
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/description" />
+
             <EditText
                 android:id="@+id/edDescription"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text="@string/description"
-                android:backgroundTint="@android:color/transparent"
-                style="@style/Number"/>
+
+                android:ems="10" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -226,7 +312,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/tvRasxod"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -234,13 +319,21 @@
                     android:textColor="@color/black" />
             </LinearLayout>
 
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:text="@string/count_material" />
+
             <EditText
                 android:id="@+id/edCountMaterial"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/count_material"
-                style="@style/Number"/>
+                android:gravity="center"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -249,14 +342,21 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/stock_out_paper" />
 
             <EditText
                 android:id="@+id/edCountStockMaterial"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/stock_out_paper"
-                style="@style/Number"/>
+                android:gravity="center" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -265,14 +365,21 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/remainder_material" />
 
             <EditText
                 android:id="@+id/edRemainderMaterial"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/remainder_material"
-                style="@style/Number"/>
+                android:gravity="center" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -281,14 +388,21 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/setup_material" />
 
             <EditText
                 android:id="@+id/edSetupMaterial"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/setup_material"
-                style="@style/Number"/>
+                android:gravity="center" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -297,17 +411,23 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/inks_print" />
 
             <EditText
                 android:id="@+id/edInksName"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/inks_print"
                 android:lines="5"
                 android:maxLines="5"
-                android:minLines="1"
-                style="@style/Number"/>
+                android:minLines="1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -316,17 +436,23 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/inks_print_job" />
 
             <EditText
                 android:id="@+id/edInksJob"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/inks_print_job"
                 android:lines="5"
                 android:maxLines="5"
-                android:minLines="1"
-                style="@style/Number" />
+                android:minLines="1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -335,17 +461,21 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/alko_print_count" />
 
             <EditText
                 android:id="@+id/edAlcoCount"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/alko_print_count"
-                android:lines="2"
-                android:maxLines="2"
-                android:minLines="2"
-                style="@style/Number"/>
+                android:gravity="center"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -354,15 +484,20 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/pH_print_name" />
 
             <EditText
                 android:id="@+id/edPHname"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text="@string/pH_print_name"
-                android:backgroundTint="@android:color/transparent"
-                style="@style/Number"/>
+                android:ems="10" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -371,15 +506,21 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/pH_print_count" />
 
             <EditText
                 android:id="@+id/edPHCount"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/pH_print_count"
-                android:backgroundTint="@android:color/transparent"
-                style="@style/Number"/>
+                android:gravity="center"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -388,17 +529,23 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/other_materials_name" />
 
             <EditText
                 android:id="@+id/edOtherName"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/other_materials_name"
                 android:lines="5"
                 android:maxLines="5"
-                android:minLines="1"
-                style="@style/Number" />
+                android:minLines="1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -408,16 +555,22 @@
 
             </LinearLayout>
 
+            <TextView
+                style="@style/Name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/other_materials_count" />
+
             <EditText
                 android:id="@+id/edOtherCount"
+                style="@style/Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="@string/other_materials_count"
                 android:lines="5"
                 android:maxLines="5"
-                android:minLines="1"
-                style="@style/Number"  />
+                android:minLines="1" />
 
             <LinearLayout
                 android:layout_width="match_parent"

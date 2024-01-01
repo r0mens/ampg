@@ -24,7 +24,6 @@
             android:padding="5dp">
 
             <LinearLayout
-                android:id="@+id/linearLayout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="1dp"
@@ -51,13 +50,20 @@
                     android:text="@string/date" />
 
                 <TextView
+                    style="@style/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:text="@string/name_job" />
+
+                <TextView
                     android:id="@+id/tvName"
                     style="@style/Name_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:lines="2"
-                    android:text="@string/name_job" />
+                    android:lines="2" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -68,13 +74,64 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/tvNumber"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/number_job"
-                    android:textColor="@color/black" />
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <TextView
+                        style="@style/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="@string/number_job" />
+
+                    <TextView
+                        android:id="@+id/tvNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:layout_marginStart="3dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#0F39DA"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <TextView
+                        style="@style/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="@string/machine2" />
+
+                    <TextView
+                        android:id="@+id/tvMachine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:layout_marginStart="3dp"
+                        android:textColor="@color/black"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -86,31 +143,21 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/tvMachine"
+                    style="@style/title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/machine"
-                    android:textColor="@color/black"
-                    android:textStyle="normal" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_weight="1"
-                    android:background="#0F39DA"
-                    android:orientation="vertical">
-
-                </LinearLayout>
+                    android:text="@string/material"/>
 
                 <TextView
                     android:id="@+id/tvMaterial"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/material"
                     android:textColor="@color/black"
+                    android:gravity="center"
                     android:textStyle="normal" />
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -120,14 +167,21 @@
                     android:orientation="vertical">
 
                 </LinearLayout>
+                <TextView
+                    style="@style/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/paper_format"/>
 
                 <TextView
                     android:id="@+id/tvPaperFormat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/paper_format"
+                    android:gravity="center"
                     android:textColor="@color/black"
+                    android:layout_marginStart="3dp"
                     android:textStyle="normal" />
 
                 <LinearLayout
@@ -138,15 +192,31 @@
                     android:orientation="vertical">
 
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tvCountSheets"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/count_sheets"
-                    android:textColor="@color/black"
-                    android:textStyle="normal" />
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <TextView
+                        style="@style/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="@string/count_sheets" />
+
+                    <TextView
+                        android:id="@+id/tvCountSheets"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="3dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -156,15 +226,32 @@
                     android:orientation="vertical">
 
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tvThickness"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/paper_thickness"
-                    android:textColor="@color/black"
-                    android:textStyle="normal" />
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <TextView
+                        style="@style/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:text="@string/paper_thickness" />
+
+
+                    <TextView
+                        android:id="@+id/tvThickness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="3dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -174,15 +261,33 @@
                     android:orientation="vertical">
 
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tvDensity"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/paper_density"
-                    android:textColor="@color/black"
-                    android:textStyle="normal" />
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+
+                    <TextView
+                        style="@style/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="@string/paper_density"/>
+
+
+                    <TextView
+                        android:id="@+id/tvDensity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="3dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -192,15 +297,33 @@
                     android:orientation="vertical">
 
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tvCountPlates"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/count_plates"
-                    android:textColor="@color/black"
-                    android:textStyle="normal" />
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+
+                    <TextView
+                        style="@style/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="@string/count_plates"/>
+
+
+                    <TextView
+                        android:id="@+id/tvCountPlates"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="3dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -210,13 +333,18 @@
                     android:orientation="vertical">
 
                 </LinearLayout>
+                <TextView
+                    style="@style/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/plat_format" />
 
                 <TextView
                     android:id="@+id/tvPlatesFormat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/plat_format"
                     android:textColor="@color/black"
+                    android:textAlignment="center"
                     android:textStyle="normal" />
 
                 <LinearLayout
@@ -227,13 +355,18 @@
                     android:orientation="vertical">
 
                 </LinearLayout>
+
+                <TextView
+                    style="@style/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/count_colors_names"/>
 
                 <TextView
                     android:id="@+id/tvCountColorsNames"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/count_colors_names"
                     android:textColor="@color/black"
                     android:textStyle="normal" />
 
@@ -247,11 +380,16 @@
                 </LinearLayout>
 
                 <TextView
+                    style="@style/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"/>
+
+                <TextView
                     android:id="@+id/tvDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/description"
                     android:textColor="@color/black"
                     android:textStyle="normal" />
 
@@ -264,15 +402,141 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#9E9696"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tvCountMaterial"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/rasxod_material"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/count_material"
-                    android:textColor="@color/black"
-                    android:textStyle="normal" />
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="@string/count_material"/>
+
+
+                    <TextView
+                        android:id="@+id/tvCountMaterial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:layout_marginStart="3dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="3"
+                    android:background="#0F39DA"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="@string/stock_out_paper"/>
+
+                    <TextView
+                        android:id="@+id/tvCountStockMaterial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:layout_marginStart="3dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#0F39DA"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="@string/remainder_material"/>
+
+                    <TextView
+                        android:id="@+id/tvRemainderMaterial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:layout_marginStart="3dp"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#0F39DA"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="@string/setup_material"/>
+
+                    <TextView
+                        android:id="@+id/tvSetupMaterial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:layout_marginStart="3dp"/>
+                </LinearLayout>
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -284,65 +548,17 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/tvCountStockMaterial"
+                    style="@style/title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/stock_out_paper"
-                    android:textColor="@color/black"
-                    android:textStyle="normal" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_weight="1"
-                    android:background="#0F39DA"
-                    android:orientation="vertical">
-
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tvRemainderMaterial"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/remainder_material"
-                    android:textColor="@color/black"
-                    android:textStyle="normal" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_weight="1"
-                    android:background="#0F39DA"
-                    android:orientation="vertical">
-
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tvSetupMaterial"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/setup_material"
-                    android:textColor="@color/black"
-                    android:textStyle="normal" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_weight="1"
-                    android:background="#0F39DA"
-                    android:orientation="vertical">
-
-                </LinearLayout>
+                    android:text="@string/inks_print"/>
 
                 <TextView
                     android:id="@+id/tvInksName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/inks_print"
                     android:textColor="@color/black"
                     android:textStyle="normal" />
 
@@ -354,13 +570,22 @@
                     android:orientation="vertical">
 
                 </LinearLayout>
+                <TextView
+                    style="@style/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/inks_print_job"/>
 
                 <TextView
                     android:id="@+id/tvInksJob"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/inks_print_job"
+                    android:ems="10"
+                    android:lines="5"
+                    android:maxLines="5"
+                    android:minLines="1"
                     android:textColor="@color/black"
                     android:textStyle="normal" />
 
@@ -372,15 +597,22 @@
                     android:orientation="vertical">
 
                 </LinearLayout>
+
+                <TextView
+                    style="@style/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/alko_print_count"/>
 
                 <TextView
                     android:id="@+id/tvAlcoCount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/alko_print_count"
                     android:textColor="@color/black"
-                    android:textStyle="normal" />
+                    android:textStyle="normal"
+                    android:gravity="center" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -390,13 +622,19 @@
                     android:orientation="vertical">
 
                 </LinearLayout>
+
+                <TextView
+                    style="@style/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pH_print_name"/>
 
                 <TextView
                     android:id="@+id/tvPHname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/pH_print_name"
                     android:textColor="@color/black"
                     android:textStyle="normal" />
 
@@ -408,15 +646,22 @@
                     android:orientation="vertical">
 
                 </LinearLayout>
+
+                <TextView
+                    style="@style/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pH_print_count"/>
 
                 <TextView
                     android:id="@+id/tvPHCount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/pH_print_count"
                     android:textColor="@color/black"
-                    android:textStyle="normal" />
+                    android:textStyle="normal"
+                    android:gravity="center" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -426,13 +671,19 @@
                     android:orientation="vertical">
 
                 </LinearLayout>
+
+                <TextView
+                    style="@style/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/other_materials_name"/>
 
                 <TextView
                     android:id="@+id/tvOtherName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/other_materials_name"
                     android:textColor="@color/black"
                     android:textStyle="normal" />
 
@@ -446,11 +697,17 @@
                 </LinearLayout>
 
                 <TextView
+                    style="@style/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/other_materials_count"/>
+
+                <TextView
                     android:id="@+id/tvOtherCount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/other_materials_count"
                     android:textColor="@color/black"
                     android:textStyle="normal" />
 
@@ -470,7 +727,7 @@
                         tools:ignore="NestedWeights" />
 
                     <ImageButton
-                        android:id="@+id/imageButton3"
+                        android:id="@+id/qr_Generation"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

@@ -47,6 +47,18 @@ data class OffsetNotes(
     val setup_material: String,
     @ColumnInfo(name = "inks_print")
     val inks_print_name: String,
+    //@ColumnInfo(name = "inks_print_1")
+    //val inks_print_name1: String,
+    //@ColumnInfo(name = "inks_print_2")
+    //val inks_print_name2: String,
+    //@ColumnInfo(name = "inks_print_3")
+    //val inks_print_name3: String,
+    //@ColumnInfo(name = "inks_print_4")
+    //val inks_print_name4: String,
+    //@ColumnInfo(name = "inks_print_5")
+    //val inks_print_name5: String,
+    //@ColumnInfo(name = "inks_print_l")
+    //val inks_print_nameL: String,
     @ColumnInfo(name = "inks_print_job")
     val inks_print_job: String,
     @ColumnInfo(name = "alko_print_count")

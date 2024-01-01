@@ -1,10 +1,10 @@
 package com.roman_druck.ampg_printing_room.activities
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import com.roman_druck.ampg_printing_room.R
 import com.roman_druck.ampg_printing_room.databinding.ActivityNewOffsetNotesBinding
 import com.roman_druck.ampg_printing_room.entities.OffsetNotes
@@ -16,12 +16,16 @@ class NewOffsetNotesActivity : AppCompatActivity() {
     private lateinit var binding: ActivityNewOffsetNotesBinding
     private var note: OffsetNotes? = null
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityNewOffsetNotesBinding.inflate(layoutInflater)
         setContentView(binding.root)
         actionBarSettings()
         getNote()
+
+
 
     }
     private fun actionBarSettings() {
@@ -83,6 +87,8 @@ class NewOffsetNotesActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+
+
     private fun setMainResult() {
         var editState = "new"
         val tempNote: OffsetNotes? = if (note == null) {
@@ -91,6 +97,9 @@ class NewOffsetNotesActivity : AppCompatActivity() {
             editState = "update"
             updateOffsetNote()
         }
+
+
+
 
         val i = Intent().apply {
             putExtra(OffsetNoteFragment.NEW_NOTE_OFFSET_KEY, tempNote)
@@ -164,4 +173,7 @@ class NewOffsetNotesActivity : AppCompatActivity() {
 
         )
     }
+
 }
+
+
